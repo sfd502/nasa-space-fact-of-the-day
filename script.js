@@ -10,3 +10,8 @@ const facts = [
   "Apollo 11 landed the first humans on the Moon on July 20, 1969.",
   "Jupiter's Great Red Spot is a giant storm that has been observed for centuries."
 ];
+
+function showRandomFact() {
+  const index = Math.floor(Math.random() * facts.length);
+  document.getElementById("fact").textContent = facts[index];
+}
